@@ -1,0 +1,134 @@
+ html,body
+ 	{
+ 		height: 100%;
+ 		width: 100%;
+ 		margin: 0;
+ 	}
+
+  .video-container
+  	{
+  		position: relative;
+  		width: 100%;
+  		height: 100%;
+  		overflow: hidden;
+  	}
+
+  	.video-background
+  		{
+  			position: absolute;
+  			width: auto;
+  			height: auto;
+  			min-height: 100%;
+  			min-width: 100%;
+  			z-index: -100;
+  			background-attachment: fixed;
+
+  		}
+
+  	.bg-modui {
+    background-color: rgba(0,0,0,0.5);
+}
+
+  	#logo
+  		{
+  			position: absolute;
+  			color: #fff;
+  			padding-left: 40px;
+  			font-size: 1.6em;
+
+  		}
+
+  	@media (max-width: 767px)
+  	{
+
+  		.video-container
+  			{
+  				background :url("Matcha.jpg");
+
+  			}
+
+  		.video-background
+  			{
+  				display: none;
+  			}
+
+  	}
+
+	#overlay  
+		{	
+		    background-color: rgba(0,0,0,0.4);
+			display: table;
+			height: 100%;
+			width: 100%;
+			
+
+		}	
+
+	.overlay-content
+		{
+			height: 100%;
+			width: 100%;
+			display: table-cell;
+			vertical-align: middle;
+			color: rgba(255,255,255,0.7);
+
+
+
+		}
+
+	.overlay-content h1
+		{
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 700;
+			color:  #efd780;
+
+		}
+
+	.overlay-content h2
+		{
+			font-family: 'EB Garamond', serif;
+			font-weight: 500;
+			color:  #efd780;
+		}
+
+	.modui-heading
+		{
+			font-family: 'Quicksand', sans-serif;
+			font-size: 40px;
+			font-weight: 250;
+			color: #dba159;
+
+		}
+	.modui-p
+		{
+			font-family: 'EB Garamond', serif;
+			font-size: 20px;
+			font-weight: 150;
+			color:  #efd780;
+
+		}
+	.btn-outline-dark 
+		{
+	    color: #dba159;
+	    background-color: transparent;
+	    background-image: none;
+	    border-color: #dba159;
+		}
+
+	.btn-outline-dark:hover 
+		{
+	    color: #efd780;
+	    background-color: #dba159;
+	    border-color: #dba159;
+		}
+
+	.modui-container
+		{
+			background-color: #2B303A;
+		}
+	#logo
+		{
+			padding-top: 20px;
+			color: #efd780;
+		}
+

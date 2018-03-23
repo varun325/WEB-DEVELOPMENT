@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>jquery practice</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".hide").click(function(){
+			$("p").toggle();
+			
+		});
+
+		$(".fadeIn").click(function(){
+			$("p").fadeIn("slow");
+		});
+
+		$(".fadeOut").click(function(){
+			$("p").fadeOut("slow");
+		});
+	});
+	</script>
+	<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 1000px;
+      height: 320px;
+      
+  }
+
+  body {
+   background-image: url("img4.jpg");
+   background-color: #cccccc;
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+  </style>
+</head>
+<body>
+	<div class="container-fluid" style="padding: 10px;">
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Home</a>
+					</li>
+				<li class="navbar-item">
+					<a href="#" class="nav-link">About Us</a>	
+				</li>
+				<li class="navbar-item">
+					<a href="#" class="nav-link">Features</a>
+					</li>
+				<li class="navbar-item">
+					<a href="#" class="nav-link">Site Links</a>
+					</li>
+				<li class="navbar-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" id="navdrop" data-toggle="dropdown">Contact</a>
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item bg-secondary">Office</a>
+						<a href="#" class="dropdown-item bg-dark">Home</a>
+						<a href="#" class="dropdown-item bg-secondary">Mobile</a>
+					</div>
+					</li>
+
+				<form class="form-inline" action="/actionpage.php">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">@user</span>
+							
+						</div>
+						
+					</div>
+					<input type="text" class="form-control mr-sm-2" name="search" placeholder="search">
+					<button class="btn btn-outline-primary" type="submit">Search</button>
+				</form>
+			</ul>
+			
+		</nav>
+		<div class="row justify-content-center" style="padding: 45px;">
+
+					<div id="demo" class="carousel slide" data-ride="carousel">
+						<!--Indicators-->
+						<ul class="carousel-indicators">
+							<li data-target="#demo" data-slide-to="0" class="active"></li>
+							<li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li>
+							
+						</ul>
+						<!--SlideShow-->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img1.jpg">
+							</div>
+							<div class="carousel-item">
+								<img src="img8.jpg">
+							</div>
+							<div class="carousel-item">
+								<img src="img3.jpg">
+							</div>
+							
+						</div>
+						<!--Left / Right-->
+						<a href="#demo" class="carousel-control-prev" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a href="#demo" class="carousel-control-next" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+
+		<div class="row">
+			<div class="col-lg-8">
+				<p class="text-white">Yes,i should be hidden 
+				Where can I get some?<br>
+				There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+			</div>
+			<div class="col-lg-4">
+				<button class="hide btn btn-outline-primary ">toggle</button><br/><br>
+				<button class="fadeIn btn btn-outline-success">FadeIn</button><br/><br>
+				<button class="fadeOut btn btn-outline-warning">FadeOut</button><br/><br>
+
+				<div class="progress bg-dark">
+					<div class=" progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 45%;">45%</div>
+					<div class=" progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 55%;">55% hot</div>
+				</div>
+			</div>
+
+				
+
+		</div>
+		<div class="row" >
+					<div class="col-lg">
+					<table class="table table-bordered table-striped table-dark">
+						<thead>
+							<tr>
+								<td>First Name</td>
+								<td>Last Name</td>
+								<td>Email</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Tobey</td>
+								<td>Maguire</td>
+								<td>Maguiretobey@gmail.com</td>
+							</tr>
+							<tr>
+								<td>kit</td>
+								<td>kitharigngton</td>
+								<td>kitharigngton@hotmail.com</td>
+							</tr>
+							<tr>
+								<td>Kate</td>
+								<td>Bishop</td>
+								<td>Bishopkate@rediffmail.com</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-lg">
+					<p class="text-white">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+				</div>
+
+		</div>
+		
+	</div>
+	
+
+
+	
+	
+	
+
+
+</body>
+</html>
