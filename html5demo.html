@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <!--Boot strap cdn link down there to use the deafult boot strap classes.-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+       <!--Personal css-->
+        <link rel="stylesheet " href="html5demo.css">
+    </head>
+    <body>
+
+        <!--Navigation bar using bootstrap and boot strap classes-->
+
+
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark navnav" style=" width:100%">
+                <a class="navbar-brand" href="#" style="color:rgba(211, 197, 197, 0.671) !important">HTML5demo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#" style="color:rgba(211, 197, 197, 0.671) !important">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color:rgba(211, 197, 197, 0.671) !important">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:rgba(211, 197, 197, 0.671) !important">
+                        Contact
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Address</a>
+                        <a class="dropdown-item" href="#">Email</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Mobile</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">cases</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+
+
+
+
+
+
+
+
+
+              <!--HTML for the remaining four projects-->
+
+
+
+
+
+
+
+
+
+              <div class="container-fluid">
+
+                    <div class="row" style="height:450px">
+
+                        
+                            <!-- Code for the video player  -->
+                            <div class="col-sm-6" style=" background-color: rgba(255, 235, 205, 0.459)">
+                
+                                    <video id="myvideo"src="Matcha.mp4" loop  style="height:380px; width: 100%"></video>
+                                   <br>
+                                    <button class=" btn btn-outline-success" onclick="document.getElementById('myvideo').play()"> Play |></button>
+                                    <button class=" btn btn-outline-success" onclick="document.getElementById('myvideo').pause()"> Pause ||</button>                                
+                                    <button class=" btn btn-outline-success" onclick="document.getElementById('myvideo').volume+=0.1"> + volume</button>
+                                    <button class=" btn btn-outline-success" onclick="document.getElementById('myvideo').volume-=0.1"> - volume</button>
+                                    <h1 class="heading1" style="display:inline; z-index: 2">  Video Player</h1>
+                                </div>
+                
+    
+                               
+                               
+                               <!-- code for the drag and drop project-->
+                               
+                                <div class="col-sm-6" style="background-color:rgba(182, 72, 94, 0.281)">
+    
+                                        <h1 class="heading1" contenteditable="true">Drag and drop project</h1>
+                                    
+    
+                                            <div class="col-sm-6"></div>
+                                                
+                                                    <div id="box" ondrop="drop(event)" ondragover="allowdrop(event)">
+                                                        
+                                                        Drag the image here <br>
+                                                        btw the heading above is editable.
+
+                                                        
+                    
+                                                    </div>
+                                
+                                                    <br>
+                                                    <div id="image1">
+                                                    <img id="image1" src="earth_cloud_sea_water_blue_beautiful_1980x1200.jpg" height="150px" width="190px" draggable="true" ondragstart="drag(event)">
+                    
+                                                    </div>
+            
+            
+            
+    
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li>Drag the image and drop it into the box.</li>
+                                                </ul>
+                                            </div>
+                                       
+                                    
+                                  
+    
+                                </div>
+    
+                                
+
+
+                    
+
+                    </div>
+
+
+
+                    <div class="row container-justify" style="height:230px">
+
+                            <div class="col-sm-6" style="background-color:rgba(71, 61, 139, 0.315)">
+                                <h1 class="heading1">GeoLocation Project</h1>
+                                <button class="btn btn-outline-danger" onclick="getLocation()">Get Co-ordinates</button>    
+                                <h1 id="coords"class="heading1" style="color:crimson"></h1>
+                            </div>
+                    
+                            <!-- code for thge local storage project-->
+
+                            <div class="col-sm-6" style="background-color:rgba(139, 0, 0, 0.267)">
+                                    <div>
+                                            <header>
+                                              <h1 class="heading1" > My Note</h1>
+                                            </header>
+                                            <section>
+                                                <div id="note" contenteditable="true" onkeyup="saveNote(this.id)" style="background-color:darkgrey ; padding: 10px"></div>
+                                            </section>
+                                            <footer>
+                                                <div >
+                                                    <br><br>
+                                                    <a class="btn btn-outline-danger" href="" class="clear" onclick="javascript :clearNote()"> clear</a>
+                                                </div>
+                                            </footer>
+                                            </div>
+                           
+                                </div>
+                    
+                    
+                          </div>
+                    
+                       
+                    
+                    </div>  
+
+                   
+              </div>
+
+     
+
+              <!-- Script for local storage project-->
+
+              <script>
+              
+              function getNote(){
+                  if(localStorage.getItem('note')){
+                      var note =localStorage.getItem('note');
+                  }
+                  else{
+                      var note = "Go ahead and edit the note in local storage"
+                  }
+
+                  document.getElementById("note").innerHTML=note;
+              }
+              
+            
+            function saveNote(id){
+                var note = document.getElementById('note').innerHTML;
+                localStorage.setItem('note',note);
+            }
+
+            function clearNote(){
+                clear: localStorage.clear();
+                return false;
+            }
+
+
+               </script>
+
+
+               <!--Script to execute the local storage-->
+               <script>
+               
+               getNote();
+               </script>
+             
+               
+            
+           
+
+
+
+            <!--Script for Geolocation project-->
+
+
+            <script>
+            
+            var x =document.getElementById('coords');
+
+            function getLocation(){
+
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition);
+
+                }
+                else{
+                    x.innerHTML= "geolocation is not supported."
+                                   }
+
+                
+                function showPosition(position){
+                    console.log(position.coords.latitude);
+                    x.innerHTML=parseFloat(position.coords.latitude) +"<br>"+parseFloat(position.coords.longitude);
+                }
+
+            }
+            
+            
+            
+            
+            
+            
+            
+            </script>
+
+
+
+
+
+
+
+
+
+            <!-- script for the drag and drop project  -->
+
+            <script>
+                function allowdrop(ev){
+                    ev.preventDefault();
+                }
+
+                function drag(ev){
+                    ev.dataTransfer.setData("text",ev.target.id);
+                }
+
+                function drop(ev){
+                    ev.preventDefault();
+
+                  var data=  ev.dataTransfer.getData("text",ev.target.id);
+                    ev.target.appendChild(document.getElementById(data));
+                }
+
+            </script>
+
+
+
+
+
+
+
+
+
+
+            <!--popper,slim and bootstrap script required for the boot strap.-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>

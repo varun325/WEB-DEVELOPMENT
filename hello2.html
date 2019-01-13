@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+              #mango , #mango1
+                {
+                    color: crimson;
+                    font-family: Arial;
+                    font-style: oblique;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                .button 
+                    {
+                    
+                        background-color: darksalmon;
+                        border: none;
+                    }
+
+        </style>
+    </head>
+    <body>
+        <p id="mango">This paragraph is supposed to be blue</p>
+        <p id="mango1"></p>
+        <input type="button" class="button" name="submit" value="submit" onclick="clickme()">
+
+        <script>
+       
+            
+            function clickme()
+                {    var x =document.getElementById('mango').innerHTML;
+                    var elem =document.querySelector("#mango1");
+                    elem.style.color=  'darkturquoise';
+                    document.getElementById('mango').innerHTML=" hahahhahahhahahah";
+                    document.getElementById("mango1").innerHTML =x;
+                }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,63 @@
+.bg-dark 
+    {
+        background-color:  rgba(0, 4, 5, 0.692) !important;
+    }
+ .navnav
+ {
+     z-index: 3;
+ }
+
+.btn-outline-success {
+    color: rgba(255, 121, 121, 0.705);
+    border-color:rgba(255, 121, 121, 0.842);
+}
+
+.btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success:active, .btn-outline-success.active, .open>.dropdown-toggle.btn-outline-success {
+    color: rgba(255, 121, 121, 0.76) !important;
+    background-color: rgba(255, 121, 121, 0.425) !important;
+    border-color:rgba(255, 121, 121, 0.829)!important;
+}
+
+
+
+#navbarSupportedContent
+    {
+        font-size: 18px;
+        font-family: Helvetica;
+        font-weight: bolder;
+    }
+
+
+
+.parallax 
+    {
+        background-image: url("accounting-alone-application-938965.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
+
+.overlay2 
+    {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 50%;
+        z-index: 2;
+        background-color: rgba(190, 46, 221,0.3);
+
+    }
+
+
+    .overlay1 
+    {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 50%;
+        background-color:rgba(255, 121, 121,0.3);
+        
+    }
